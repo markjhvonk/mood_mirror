@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    hoi
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            // Find all of the objects that are paintings and have the word "rabbit" in the title
+            var apiEndpointBaseURL = "http://api.harvardartmuseums.org/object";
+            var queryString = $.param({
+                apikey: "fec9ded0-f7b6-11e6-a459-7b38e8009412",
+                title: "rabbit",
+                classification: "Paintings"
+            });
+
+            $.getJSON(apiEndpointBaseURL + "?" + queryString, function(data) {
+                console.log(data);
+            });
+
+            console.log("haha");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Detect demo</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="vendor/normalize.css">
+        <link rel="stylesheet" href="vendor/qtip/jquery.qtip.min.css">
+        <link rel="stylesheet" href="vendor/rainbow/themes/tricolore.css">
+        <link rel="stylesheet" href="dist/css/detect.min.css">
+    </head>
+    <body>
+        <div id="detector" class="detector">
+            <div class="input-bar">
+                <div class="left-paddle"></div>
+                <div class="photolist-wrapper">
+                    <div class="photolist"></div>
+                </div>
+                <div class="right-paddle"></div>
+
+                <div class="input-form-wrapper">
+                    <form class="url-form" method="get" action="#">
+                        <input type="text" class="url-field" />
+                        <input type="submit" class="btn" value="Detect URL" />
+                    </form>
+                    <a class="btn upload-file-wrapper" href="#">
+                        Upload
+                        <input type="file" class="upload-file" />
+                    </a>
+                    <a class="btn webcam"><i class="icon-webcam"></i></a>
+                </div>
+            </div>
+
+            <div class="output-section">
+                <div class="canvas-wrapper">
+                    <canvas width="520" height="520" class="canvas"></canvas>
+                    <div class="faces"></div>
+                </div>
+                <div class="rest-url-wrapper">
+                    <b>REST URL:</b>
+                    <div class="rest-url mono"></div>
+                </div>
+                <div class="result-wrapper">
+                    <div class="result-title">Response JSON</div>
+                    <pre><code class="result mono"></code></pre>
+                </div>
+            </div>
+
+            <div class="camera-modal">
+                <video autoplay width="500" height="375"></video>
+                <a class="btn capture" href="#">Capture</a>
+            </div>
+        </div>
+
+        <script src="vendor/jquery-1.8.2.min.js"></script>
+        <script src="vendor/qtip/jquery.qtip.min.js"></script>
+        <script src="vendor/rainbow/rainbow.min.js"></script>
+        <script src="dist/js/detect.min.js"></script>
+    </body>
+</html>
+
+<script>
+    <?php print_r( ?>  <?php );?>
+</script>
